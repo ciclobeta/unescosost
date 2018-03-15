@@ -37,6 +37,27 @@ import { FormacionComponent } from './esecretaria/formacion/formacion.component'
 import { ComunicacionComponent } from './esecretaria/comunicacion/comunicacion.component';
 import { TecnicasComponent } from './esecretaria/tecnicas/tecnicas.component';
 
+
+import { ApplicationRef } from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
+
+// import { BibiografiaComponent } from './bibiografia/bibiografia.component';
+import { QuillModule } from 'ngx-quill';
+import { InvestigacionesComponent } from './persona/investigaciones/investigaciones.component';
+import { DocumentosComponent } from './persona/documentos/documentos.component';
+import { NoticiasComponent } from './persona/noticias/noticias.component';
+import { ProyectosComponent } from './persona/proyectos/proyectos.component';
+import { IndicadoresComponent } from './persona/indicadores/indicadores.component';
+import { BibliografiaComponent } from './persona/bibliografia/bibliografia.component';
+import { GestionDocumentosComponent } from './admon/gestion-documentos/gestion-documentos.component';
+import { GestionProyectosComponent } from './admon/gestion-proyectos/gestion-proyectos.component';
+import { GestionNoticiasComponent } from './admon/gestion-noticias/gestion-noticias.component';
+
+
+// import { TagInputModule } from 'ngx-chips';
+ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
+ import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
     declarations: [
         // PagesComponent,
@@ -58,7 +79,17 @@ import { TecnicasComponent } from './esecretaria/tecnicas/tecnicas.component';
         GestionComponent,
         FormacionComponent,
         ComunicacionComponent,
-        TecnicasComponent
+        TecnicasComponent,
+        // BibiografiaComponent,
+        InvestigacionesComponent,
+        DocumentosComponent,
+        NoticiasComponent,
+        ProyectosComponent,
+        IndicadoresComponent,
+        BibliografiaComponent,
+        GestionDocumentosComponent,
+        GestionProyectosComponent,
+        GestionNoticiasComponent
     ],
     exports: [
         DashboardComponent,
@@ -71,7 +102,14 @@ import { TecnicasComponent } from './esecretaria/tecnicas/tecnicas.component';
         PAGES_ROUTES,
         FormsModule,
         ChartsModule,
-        PipesModule
+        PipesModule,
+        QuillModule,
+       // TagInputModule,
+       // BrowserAnimationsModule,
+       // ReactiveFormsModule,
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyD5HQHieWifkYkbHFEa7BuBe8hqok823IA'
+          })
     ]
 })
 export class PagesModule { }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../../models/usuario.model';
 import { UsuarioService } from '../../services/service.index';
+// import { MouseEvent } from '@agm/core';
 
 @Component({
   selector: 'app-profile',
@@ -13,6 +14,17 @@ export class ProfileComponent implements OnInit {
 
   imagenSubir: File;
   imagenTemp: string;
+
+      title: string = 'Mi ubicacíon';
+        // --- [MAPA] -------
+      // google maps zoom level
+      zoom: number = 8;
+      lat: number = 6.189881;
+      lng: number = -75.573748;
+
+
+
+  // ----------
 
   constructor(
     public _usuarioService: UsuarioService
@@ -63,4 +75,6 @@ export class ProfileComponent implements OnInit {
 
   }
 
+
 }
+

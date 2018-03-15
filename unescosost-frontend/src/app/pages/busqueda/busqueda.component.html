@@ -27,7 +27,7 @@
     <div class="col-4">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Médicos</h4>
+                <h4 class="card-title">Documentos</h4>
 
                 <table class="table table-hover" *ngIf="medicos.length > 0">
                     <tbody>
@@ -51,7 +51,7 @@
     <div class="col-4">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Hospitales</h4>
+                <h4 class="card-title">Proyectos</h4>
 
                 <table class="table table-hover" *ngIf="hospitales.length > 0">
                     <tbody>
@@ -72,6 +72,29 @@
         </div>
     </div>
 
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Noticias</h4>
+
+                <table class="table table-hover" *ngIf="hospitales.length > 0">
+                    <tbody>
+                        <tr *ngFor="let hospital of hospitales" [routerLink]="['/hospitales']" class="pointer">
+                            <td>
+                                <img [src]="hospital.img | imagen:'hospital'" class="img-50 img-circle">
+                            </td>
+                            <td>{{ hospital.nombre }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-info" *ngIf="hospitales.length === 0">
+                    No hay registros
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 </div>

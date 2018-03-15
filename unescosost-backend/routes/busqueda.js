@@ -24,12 +24,12 @@ app.get('/coleccion/:tabla/:busqueda', (req, res) => {
             break;
 
         case 'medicos':
-            promesa = buscarMedicos(busqueda, regex);
-            break;
+            //promesa = buscarMedicos(busqueda, regex);
+            //break;
 
         case 'hospitales':
-            promesa = buscarHospitales(busqueda, regex);
-            break;
+            //promesa = buscarHospitales(busqueda, regex);
+            //break;
 
         default:
             return res.status(400).json({
@@ -62,16 +62,16 @@ app.get('/todo/:busqueda', (req, res, next) => {
 
 
     Promise.all([
-            buscarHospitales(busqueda, regex),
-            buscarMedicos(busqueda, regex),
+            // buscarHospitales(busqueda, regex),
+            // buscarMedicos(busqueda, regex),
             buscarUsuarios(busqueda, regex)
         ])
         .then(respuestas => {
 
             res.status(200).json({
                 ok: true,
-                hospitales: respuestas[0],
-                medicos: respuestas[1],
+                // hospitales: respuestas[0],
+                // medicos: respuestas[1],
                 usuarios: respuestas[2]
             });
         })

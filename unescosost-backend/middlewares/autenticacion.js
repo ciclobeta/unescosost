@@ -45,8 +45,8 @@ exports.verificaADMIN_ROLE = function(req, res, next) {
 
         return res.status(401).json({
             ok: false,
-            mensaje: 'Token incorrecto - No es administrador',
-            errors: { message: 'No es administrador, no puede hacer eso' }
+            mensaje: 'UNESCOSOST::Token incorrecto - No es administrador',
+            errors: { message: 'UNESCOSOST::No es administrador, no puede hacer eso' }
         });
 
     }
@@ -71,8 +71,8 @@ exports.verificaADMIN_o_MismoUsuario = function(req, res, next) {
 
         return res.status(401).json({
             ok: false,
-            mensaje: 'Token incorrecto - No es administrador ni es el mismo usuario',
-            errors: { message: 'No es administrador, no puede hacer eso' }
+            mensaje: 'UNESCOSOST::Token incorrecto - No es administrador ni es el mismo usuario',
+            errors: { message: 'UNESCOSOST::No es administrador, no puede hacer eso' }
         });
 
     }

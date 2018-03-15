@@ -34,15 +34,15 @@ var imagenesRoutes = require('./routes/imagenes');
 
 
 // Conexión a la base de datos
+
 // 'mongodb://edi:azxlpo33@ds251588.mlab.com:51588/unescosost'
 // 'mongodb://localhost:27017/unescosostDB'
-// mongoose.connection.openUri('mongodb://localhost:27017/unescosostDB', (err, res) => {
-
-mongoose.connection.openUri('mongodb://edi:azxlpo33@ds251588.mlab.com:51588/unescosost', (err, res) => {
+mongoose.connection.openUri('mongodb://localhost:27017/unescosostDB', (err, res) => {
+    // mongoose.connection.openUri('mongodb://edi:azxlpo33@ds251588.mlab.com:51588/unescosost', (err, res) => {
 
     if (err) throw err;
-
-    console.log('Base de datos UNESCOSOST: \x1b[32m%s\x1b[0m', 'online');
+    console.log('Base de datos UNESCOSOST: \x1b[32m%s\x1b[0m :: local', 'online');
+    //console.log('Base de datos UNESCOSOST: \x1b[32m%s\x1b[0m :: onLine mLab', 'online');
 
 });
 

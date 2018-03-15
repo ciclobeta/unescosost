@@ -1,20 +1,24 @@
 {
-  "extends": "../tsconfig.json",
-  "compilerOptions": {
-    "outDir": "../out-tsc/spec",
-    "baseUrl": "./",
-    "module": "commonjs",
-    "target": "es5",
-    "types": [
-      "jasmine",
-      "node"
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "../out-tsc/spec",
+        "baseUrl": "./",
+        "module": "commonjs",
+        "target": "es5",
+        "types": [
+            "jasmine",
+            "node"
+        ]
+    },
+    "files": [
+        "test.ts"
+    ],
+    "include": [
+        "**/*.spec.ts",
+        "**/*.d.ts",
+        "src/**/*",
+        "node_modules/ngx-quill-editor/quillEditor.component.ts",
+        "node_modules/ngx-quill-editor/quillEditor.module.ts",
+        "node_modules/ngx-quill-editor/index.ts"
     ]
-  },
-  "files": [
-    "test.ts"
-  ],
-  "include": [
-    "**/*.spec.ts",
-    "**/*.d.ts"
-  ]
 }

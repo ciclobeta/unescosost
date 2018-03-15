@@ -3,11 +3,33 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>unescosost cloud</title>
+
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- lista Add -->
+    <link href="assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="../node_modules/ng-tags-input/build/ng-tags-input.min.css">
+    -->
+
+
+
+    <!-- Editor HTML -->
+    <link rel="stylesheet" href="assets/plugins/html5-editor/bootstrap-wysihtml5.css" />
+
+    <!--  <link rel="stylesheet" type="text/css" href="/css/bootstrap-wysihtml5.css"></link>  -->
+
+
 
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -17,12 +39,11 @@
 
     <base href="/">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
     <!-- Google -->
     <script src="https://apis.google.com/js/platform.js"></script>
     <meta name="google-signin-client_id" content="442737206823-dilej5tevnrv61sovd7bocf5qeafmjs3.apps.googleusercontent.com">
+
+
 
 
 </head>
@@ -46,6 +67,8 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
+    <script src="assets/plugins/html5-editor/wysihtml5-0.3.0.js"></script>
+
     <script src="assets/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
@@ -62,6 +85,23 @@
 
     <!--Custom JavaScript -->
     <script src="assets/js/custom.js"></script>
+
+    <!-- lista add -->
+    <script src="assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+    <!--
+    <script type="text/javascript" src="../node_modules/ng-tags-input/build/ng-tags-input.min.js"></script>
+    -->
+
+    <!-- wysuhtml5 Plugin JavaScript -->
+    <script src="assets/plugins/html5-editor/bootstrap-wysihtml5.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.textarea_editor').wysihtml5();
+
+
+        });
+    </script>
 
 </body>
 

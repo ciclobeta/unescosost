@@ -202,9 +202,12 @@ function obtenerMenu(ROLE) {
             titulo: 'Principal',
             icono: 'mdi mdi-gauge',
             submenu: [
-                { titulo: 'Noticias', url: '/dashboard' },
-                { titulo: 'Proyectos', url: '/progress' },
-                { titulo: 'Indicadores', url: '/graficas1' }
+                { titulo: 'Bibliografía', url: '/bibliografia' },
+                { titulo: 'Investigación', url: '/investigaciones' },
+                { titulo: 'Documentos', url: '/documentos' },
+                { titulo: 'Noticias', url: '/noticias' },
+                { titulo: 'Proyectos', url: '/proyectos' },
+                { titulo: 'Indicadores', url: '/indicadores' }
             ]
         },
         {
@@ -222,8 +225,9 @@ function obtenerMenu(ROLE) {
             icono: 'mdi mdi-folder-lock-open',
             submenu: [
                 // { titulo: 'Usuarios', url: '/usuarios' },
-                { titulo: 'H', url: '/hospitales' },
-                { titulo: 'M', url: '/medicos' }
+                { titulo: 'Documentos', url: '/gestiondocumentos' },
+                { titulo: 'Proyectos', url: '/gestionproyectos' },
+                { titulo: 'Noticias', url: '/gestionnoticias' }
             ]
         }
     ];
